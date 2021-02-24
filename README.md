@@ -30,3 +30,5 @@ To start the api, PG DB, and link them run `make api`. You can access the API on
 This project includes production grade auth with username/password and JTWs. To "login" (after running `make initialize_pg`)
 you can use Username: `johndoe` Password: `123`. The API docs include auth support, and a fully interactive environment
 to interact with the example routes! Give it a try!
+
+If you want to just spin up the PG DB run `make db_only`
