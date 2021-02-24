@@ -27,4 +27,6 @@ To start the api, PG DB, and link them run `make api`. You can access the API on
 `localhost:8000/docs` or `localhost:8000/redoc`. The only difference between those are the UI. PG can be accessed on
 `localhost:5432` using Username: `test` Password: `test` and DB: `test`. Easy to remember ;)
 
-
+This project includes production grade auth with username/password and JTWs. To "login" (after running `make initialize_pg`)
+you can use Username: `johndoe` Password: `123`. The API docs include auth support, and a fully interactive environment
+to interact with the example routes! Give it a try!
