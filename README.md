@@ -14,6 +14,11 @@ docker containers. This is orchestrated with docker-compose and a Makefile.
 
 ## Getting started
 
+TLWR: Run `make initialize_pg` then `make api`. Go to `localhost:8000/docs`. Click "Authorize" in the top right. Put in
+Username: `johndoe` Password:`123`. Click around on the routes and try them out.
+
+
+
 All the command you will need to use are included in the Makefile. Some example data is included and can be automatically
 loaded into dockerized postgres DB. All postgres data is saved in data/postgres and preserved through db shutdowns.
 
