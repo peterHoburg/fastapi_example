@@ -16,7 +16,7 @@ db_only: _base
 ### Commands to alter postgres data
 
 # Runs the db migrations and inserts test data
-initialize_pg: _base _remove_all_pg_data _run_migrations _insert_pg_data
+initialize_pg: _base _remove_all_pg_data run_migrations _insert_pg_data
 	$(MAKE) _down
 
 run_migrations: _down
@@ -44,6 +44,7 @@ _down:
 _base: _down _build
 
 _remove_all_pg_data:
+	mkdir -p data/postgres
 	sudo rm -r data/postgres
 
 _insert_pg_data: _down
